@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin-Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/74a86ce281.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <h1 id="form-title" style="background-color: orange">Log In</h1>
+        <form id="my-form">
+          <div class="input-group">
+            <div class="input-field" id="name-section">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" id="name" placeholder="name" />
+            </div>
+
+            <div class="input-field">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="text" id="email" placeholder="email" />
+            </div>
+
+            <div class="input-field">
+              <i class="fa-solid fa-lock"></i>
+              <input type="text" id="password" placeholder="password" />
+            </div>
+
+            <div class="input-field" id="login-radio-section">
+              <label>
+                <input type="radio" name="userType" value="user" />
+                User
+              </label>
+              <label>
+                <input type="radio" name="userType" value="admin" checked />
+                Admin
+              </label>
+              <label>
+                <input type="radio" name="userType" value="client" />
+                Client
+              </label>
+            </div>
+          </div>
+          <div class="btn-field">
+            <button type="button" onclick="toggleForm('signup')">
+              Sign Up
+            </button>
+            <button type="button" onclick="toggleForm('login')">Log In</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
